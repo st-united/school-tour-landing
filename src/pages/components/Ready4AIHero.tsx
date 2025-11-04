@@ -9,7 +9,7 @@ import LogoDPlus from '../../assets/devplus.png';
 import LogoUni from '../../assets/skhcn1.png';
 import image from '../../assets/events/1.png';
 import roboboss from '../../assets/company/roboboss.png';
-import minai from '../../assets/company/minai.png';
+import minai from '../../assets/company/MINAI.png';
 
 const Brand: React.FC<{ src: string; alt: string; className?: string }> = ({
   src,
@@ -19,7 +19,7 @@ const Brand: React.FC<{ src: string; alt: string; className?: string }> = ({
   <img
     src={src}
     alt={alt}
-    className={`h-6 sm:h-10 md:h-12 object-contain mx-2 ${className || ''}`}
+    className={`h-8 sm:h-14 md:h-16 object-contain mx-2 ${className || ''}`}
     loading='lazy'
   />
 );
@@ -69,9 +69,13 @@ const Ready4AIHero: React.FC = () => {
             <p className='text-[10px] sm:text-xs md:text-sm font-semibold tracking-widest text-[#274593]'>
               ĐƠN VỊ ĐỒNG HÀNH
             </p>
-            <div className='mt-2 flex items-center justify-center'>
-              <Brand src={roboboss} alt='roboboss' />
-              <Brand src={minai} alt='minai' />
+            <div className='mt-2 flex items-center justify-center gap-4'>
+              <div className='w-[3rem] md:w-[5rem]'>
+                <Brand src={roboboss} alt='roboboss' />
+              </div>
+              <div className='w-[3rem] md:w-[5rem]'>
+                <Brand src={minai} alt='minai' />
+              </div>
             </div>
           </div>
         </div>
@@ -95,7 +99,7 @@ const Ready4AIHero: React.FC = () => {
         </div>
 
         {/* Divider & caption */}
-        <div className='mx-auto mt-8 sm:mt-9 md:mt-10 max-w-lg my-20'>
+        <div className='mx-auto max-w-lg mb-10'>
           <p className='mt-3 text-center text-[#FF854D] text-xs sm:text-sm md:text-base font-bold'>
             Chương trình xác định và phát triển bộ khung năng lực thời đại
             <br />
