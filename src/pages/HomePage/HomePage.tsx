@@ -19,10 +19,12 @@ import SchoolPartnerSection from '../components/SchoolPartnerSection';
 const sectionIds = [
   'introduction',
   'activities',
-  'learning',
-  'achievement',
+  'ready4aiframe',
   'network',
   'speakers',
+  'schooltour',
+  'events',
+  'schoolpartner',
 ] as const;
 
 const HomePage = () => {
@@ -86,15 +88,9 @@ const HomePage = () => {
         <section id='activities' className='scroll-mt-24 md:scroll-mt-28'>
           <ActivitiesSection />
         </section>
-
-        {/* <section id="learning" className="scroll-mt-24 md:scroll-mt-28">
-          <Seminar />
-        </section> */}
-
-        {/* <section id='achievement' className='scroll-mt-24 md:scroll-mt-28'>
-          <ExpoBoothExperience />
-        </section> */}
-        <Ready4AIFrame />
+        <section id='ready4aiframe' className='scroll-mt-24 md:scroll-mt-28'>
+          <Ready4AIFrame />
+        </section>
 
         <section id='network' className='scroll-mt-24 md:scroll-mt-28'>
           <PartnersSection />
@@ -103,10 +99,15 @@ const HomePage = () => {
         <section id='speakers' className='scroll-mt-24 md:scroll-mt-28'>
           <SpeakerSection />
         </section>
-
-        <SamplePreview />
-        <CarouselSchoolTour />
-        <SchoolPartnerSection />
+        <section id='schooltour' className='scroll-mt-24 md:scroll-mt-28'>
+          <SamplePreview />
+        </section>
+        <section id='events' className='scroll-mt-24 md:scroll-mt-28'>
+          <CarouselSchoolTour />
+        </section>
+        <section id='schoolpartner' className='scroll-mt-24 md:scroll-mt-28'>
+          <SchoolPartnerSection />
+        </section>
         <ClosingCTASection />
       </div>
     </Layout>

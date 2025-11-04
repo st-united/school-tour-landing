@@ -5,9 +5,6 @@ import PymaridIC from '../../assets/pymarid.png';
 import CircleTwoAround from '../../assets/elements/2.png';
 import CircleDesign from '../../assets/elements/8.png';
 
-import Dev7 from '../../assets/hinh7.jpg'; // nhóm cầm chứng chỉ (trái trên)
-import Dev8 from '../../assets/hinh8.jpg'; // speaker (trên phải)
-import Dev9 from '../../assets/hinh9.jpg'; // DATA LABELING (trái giữa)
 import Dev10 from '../../assets/hinh10.jpg'; // ảnh lớn (phải dưới)
 import Logo from '../../assets/elements/10.png';
 import { event1, event2, event24 } from '../../assets/events_2025';
