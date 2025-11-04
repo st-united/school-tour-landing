@@ -1,27 +1,28 @@
-import { Layout } from "antd";
-import { useEffect, useState } from "react";
+import { Layout } from 'antd';
+import { useEffect, useState } from 'react';
 
-import HeaderDevplus from "./HeaderDevplus";
-import "./homepage.css";
+import HeaderDevplus from './HeaderDevplus';
+import './homepage.css';
 
 // ==== Sections / Components ====
-import Ready4AIHero from "../components/Ready4AIHero";
-import ActivitiesSection from "../components/ActivitiesSection";
-import Seminar from "../components/Seminar";
-import ExpoBoothExperience from "../components/ExpoBoothExperience";
-import Ready4AIFrame from "../components/Ready4AIFrame";
-import PartnersSection from "../components/PartnersSection";
-import SpeakerSection from "../components/SpeakerSection";
-import ClosingCTASection from "../components/ClosingCTASection";
+import Ready4AIHero from '../components/Ready4AIHero';
+import ActivitiesSection from '../components/ActivitiesSection';
+import Ready4AIFrame from '../components/Ready4AIFrame';
+import PartnersSection from '../components/PartnersSection';
+import SpeakerSection from '../components/SpeakerSection';
+import ClosingCTASection from '../components/ClosingCTASection';
+import SamplePreview from '../components/SchoolTourSchedule';
+import CarouselSchoolTour from '../components/CarouselSchoolTour';
+import SchoolPartnerSection from '../components/SchoolPartnerSection';
 
 // Danh sách section id để highlight menu
 const sectionIds = [
-  "introduction",
-  "activities",
-  "learning",
-  "achievement",
-  "network",
-  "speakers",
+  'introduction',
+  'activities',
+  'learning',
+  'achievement',
+  'network',
+  'speakers',
 ] as const;
 
 const HomePage = () => {
@@ -50,13 +51,13 @@ const HomePage = () => {
         } else {
           // nếu đang ở top => ép về introduction
           if (window.scrollY === 0) {
-            setActiveSection("introduction");
+            setActiveSection('introduction');
           }
         }
       },
       {
         root: null,
-        rootMargin: "-96px 0px -55% 0px", // trừ chiều cao header ~96px
+        rootMargin: '-96px 0px -55% 0px', // trừ chiều cao header ~96px
         threshold: [0, 0.25, 0.5, 0.75, 1],
       }
     );
@@ -65,7 +66,7 @@ const HomePage = () => {
 
     // set mặc định khi vừa load
     if (window.scrollY === 0) {
-      setActiveSection("introduction");
+      setActiveSection('introduction');
     }
 
     return () => observer.disconnect();
@@ -74,35 +75,38 @@ const HomePage = () => {
 
   return (
     <Layout>
-      <div className="!z-99">
+      <div className='!z-99'>
         <HeaderDevplus activeSection={activeSection} />
 
         {/* Hero (Ready4AI + School Tour 2025 bên trong) */}
-        <section id="introduction" className="scroll-mt-24 md:scroll-mt-28">
+        <section id='introduction' className='scroll-mt-24 md:scroll-mt-28'>
           <Ready4AIHero />
         </section>
 
-        <section id="activities" className="scroll-mt-24 md:scroll-mt-28">
+        <section id='activities' className='scroll-mt-24 md:scroll-mt-28'>
           <ActivitiesSection />
         </section>
 
-        <section id="learning" className="scroll-mt-24 md:scroll-mt-28">
+        {/* <section id="learning" className="scroll-mt-24 md:scroll-mt-28">
           <Seminar />
-        </section>
+        </section> */}
 
-        <section id="achievement" className="scroll-mt-24 md:scroll-mt-28">
+        {/* <section id='achievement' className='scroll-mt-24 md:scroll-mt-28'>
           <ExpoBoothExperience />
-        </section>
+        </section> */}
         <Ready4AIFrame />
 
-        <section id="network" className="scroll-mt-24 md:scroll-mt-28">
+        <section id='network' className='scroll-mt-24 md:scroll-mt-28'>
           <PartnersSection />
         </section>
 
-        <section id="speakers" className="scroll-mt-24 md:scroll-mt-28">
+        <section id='speakers' className='scroll-mt-24 md:scroll-mt-28'>
           <SpeakerSection />
         </section>
 
+        <SamplePreview />
+        <CarouselSchoolTour />
+        <SchoolPartnerSection />
         <ClosingCTASection />
       </div>
     </Layout>
