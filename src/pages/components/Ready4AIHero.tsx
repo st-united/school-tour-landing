@@ -5,11 +5,14 @@ import CircleDecor from '../../assets/elements/8.png';
 import LogoReady from '../../assets/elements/9.png';
 
 import LogoDigiSource from '../../assets/11.png';
-import LogoDPlus from '../../assets/devplus.png';
-import LogoUni from '../../assets/skhcn1.png';
+import LogoDPlus from '../../assets/devplus-name.png';
+import LogoUni from '../../assets/skhcn.png';
 import image from '../../assets/events/1.png';
 import roboboss from '../../assets/company/roboboss.png';
 import minai from '../../assets/company/MINAI.png';
+import timo from '../../assets/company/timo.png';
+import guru from '../../assets/company/guru.png';
+import naiscorp from '../../assets/company/naiscorp.png';
 
 const Brand: React.FC<{ src: string; alt: string; className?: string }> = ({
   src,
@@ -51,10 +54,10 @@ const Ready4AIHero: React.FC = () => {
       {/* ===== Content container ===== */}
       <div className='relative z-10 mx-auto max-w-6xl px-4 sm:px-6 md:px-8'>
         {/* Top logos */}
-        <div className='grid grid-cols-2 gap-4 pt-8 sm:pt-10 md:pt-12'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 sm:pt-10 md:pt-12'>
           {/* Left block */}
           <div className='text-center'>
-            <p className='text-[10px] sm:text-xs md:text-sm font-semibold tracking-widest text-[#274593]'>
+            <p className='text-[10px] sm:text-xs md:text-lg font-semibold tracking-widest text-[#fe7743]'>
               ĐƠN VỊ TỔ CHỨC
             </p>
             <div className='mt-2 flex items-center justify-center'>
@@ -64,17 +67,41 @@ const Ready4AIHero: React.FC = () => {
             </div>
           </div>
 
+          <div className='text-center'>
+            <p className='text-[10px] sm:text-xs md:text-lg font-semibold tracking-widest text-[#fe7743]'>
+              NHÀ TÀI TRỢ VÀNG
+            </p>
+            <div className='mt-2 flex items-center justify-center'>
+              <div className='w-[5rem] md:w-[7rem]'>
+                <Brand src={timo} alt='timo' />
+              </div>
+            </div>
+          </div>
+          <div className='text-center'>
+            <p className='text-[10px] sm:text-xs md:text-lg font-semibold tracking-widest text-[#fe7743]'>
+              NHÀ TÀI TRỢ BẠC
+            </p>
+            <div className='mt-2 flex gap-4 items-center justify-center'>
+              <div className='w-[5rem] md:w-[7rem]'>
+                <Brand src={guru} alt='timo' />
+              </div>
+              <div className='w-[5rem] md:w-[7rem]'>
+                <Brand src={roboboss} alt='roboboss' />
+              </div>
+              <div className='w-[5rem] md:w-[7rem]'>
+                <Brand src={minai} alt='minai' />
+              </div>
+            </div>
+          </div>
+
           {/* Middle block */}
           <div className='text-center'>
-            <p className='text-[10px] sm:text-xs md:text-sm font-semibold tracking-widest text-[#274593]'>
+            <p className='text-[10px] sm:text-xs md:text-lg font-semibold tracking-widest text-[#fe7743]'>
               ĐƠN VỊ ĐỒNG HÀNH
             </p>
             <div className='mt-2 flex items-center justify-center gap-4'>
               <div className='w-[3rem] md:w-[5rem]'>
-                <Brand src={roboboss} alt='roboboss' />
-              </div>
-              <div className='w-[3rem] md:w-[5rem]'>
-                <Brand src={minai} alt='minai' />
+                <Brand src={naiscorp} alt='naiscorp' />
               </div>
             </div>
           </div>
