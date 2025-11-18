@@ -58,7 +58,7 @@ const Ready4AIHero: React.FC = () => {
           {/* Left block */}
           <div className='text-center'>
             <p className='text-[10px] sm:text-xs md:text-lg font-semibold tracking-widest text-[#fe7743]'>
-              ĐƠN VỊ TỔ CHỨC
+              BAN TỔ CHỨC
             </p>
             <div className='mt-2 flex items-center justify-center'>
               <Brand src={LogoDPlus} alt='D+' />

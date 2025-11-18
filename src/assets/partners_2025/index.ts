@@ -62,6 +62,9 @@ import P61 from '../../assets/partners_2025/61.png';
 import P62 from '../../assets/partners_2025/62.png';
 import P63 from '../../assets/partners_2025/63.png';
 import P64 from '../../assets/partners_2025/64.png';
+import P65 from '../../assets/partners_2025/65.png';
+import P66 from '../../assets/partners_2025/66.png';
+import P67 from '../../assets/partners_2025/67.png';
 
 export {
   P1,
@@ -128,4 +131,7 @@ export {
   P62,
   P63,
   P64,
+  P65,
+  P66,
+  P67,
 };

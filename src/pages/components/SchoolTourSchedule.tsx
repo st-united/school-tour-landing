@@ -1,13 +1,8 @@
 import React from 'react';
 import {
-  P11,
   P2,
-  P27,
-  P28,
   P29,
   P3,
-  P30,
-  P31,
   P32,
   P33,
   P4,
@@ -20,6 +15,9 @@ import {
   P63,
   P7,
   P8,
+  P65,
+  P66,
+  P67,
 } from '../../assets/partners_2025';
 
 /**
@@ -219,18 +217,21 @@ export default function SamplePreview() {
     {
       key: 'NOV',
       items: [
-        { src: P27, alt: 'ĐH FPT' },
-        { src: P28, alt: 'Hoa Sen' },
-        { src: P29, alt: 'UEH' },
-        { src: P30, alt: 'HUTECH' },
+        { src: P65, alt: 'IU HCM' },
+        { src: P66, alt: 'VLSC' },
+        { src: P67, alt: 'SGU' },
       ],
     },
     {
       key: 'DEC',
       items: [
-        { src: P11, alt: 'Greenwich' },
-        { src: P31, alt: 'IUH' },
+        { src: P29, alt: 'UEH' },
         { src: P32, alt: 'BK HCM' },
+        {
+          src: P2,
+          alt: 'FPT Polytechnic',
+          href: 'https://caodang.fpt.edu.vn',
+        },
         { src: P33, alt: 'HBU' },
       ],
     },
@@ -241,7 +242,7 @@ export default function SamplePreview() {
       hashtag='#ready4AI'
       year={2025}
       months={months}
-      maxRows={6}
+      maxRows={5}
     />
   );
 }

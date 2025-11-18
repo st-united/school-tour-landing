@@ -3,30 +3,22 @@ import CircleBase from '../../assets/elements/6.png';
 import CircleOrange from '../../assets/elements/3.png';
 import CircleDonut from '../../assets/elements/5.png';
 
-import Company1CMCGlobal from '../../assets/company/1.cmc-global.png';
-import Company2Mor from '../../assets/company/2.Mor.png';
 import Company3NapaGlobal from '../../assets/company/3.Napaglobal.png';
 import Company4LogoRIKAI from '../../assets/company/4.logoRIKAI.png';
 import Company5EnouvoLogo from '../../assets/company/5.enouvologo.png';
 import Company6LogoRikkei from '../../assets/company/6.Logo-Rikkei.png';
-import Company7Tomosia from '../../assets/company/7.tomosia.png';
 import Company8Paracel from '../../assets/company/8.Paracel.png';
 import Company9MadisonTechnologies from '../../assets/company/9.madison-technologies.png';
-import Company10MOZIASOFT from '../../assets/company/10.MOZIASOFT.png';
-import Company11Techchain from '../../assets/company/11.techchain.png';
-import Company12Avoca from '../../assets/company/12.Avoca.png';
 import Company13EnableStartup from '../../assets/company/13.Enable-Startup.png';
 import Company14LOGOPSCd from '../../assets/company/14.PSCD.png';
 import Company15EMAI from '../../assets/company/15.EM&AI.png';
-import Company16Mrp from '../../assets/company/16.mrp.png';
-import Company17Heatmob from '../../assets/company/17.heatmob.png';
 import Company18EvvoLabs from '../../assets/company/18.EvvoLabs.png';
 import Company19Amit from '../../assets/company/19.AMIT.png';
 import Company20Spereax from '../../assets/company/20.spereax.png';
 import Company21Edtronaut from '../../assets/company/21.logoedtronaut.png';
 import Company22Aiaivn from '../../assets/company/22.AIAIVN.png';
 import Company23Antie from '../../assets/company/23.antie.png';
-import Company24Chatfly from '../../assets/company/24.chatfly.png';
+import Company25Codecomplete from '../../assets/company/codecomplete.png';
 
 const CompanyCard = ({ org }: { org: { name: string; image: string } }) => {
   return (
@@ -46,34 +38,29 @@ const CompanyCard = ({ org }: { org: { name: string; image: string } }) => {
 type Logo = { name: string; src: string };
 
 const NETWORK_1: Logo[] = [
-  { name: 'CMC Global', src: Company1CMCGlobal },
-  { name: 'MOR', src: Company2Mor },
-  { name: 'Napa Global', src: Company3NapaGlobal },
-  { name: 'RIKAI', src: Company4LogoRIKAI },
   { name: 'Enouvo', src: Company5EnouvoLogo },
   { name: 'Rikkei', src: Company6LogoRikkei },
-  { name: 'Tomosia', src: Company7Tomosia },
-  { name: 'Paracel', src: Company8Paracel },
+  { name: 'Napa Global', src: Company3NapaGlobal },
+  { name: 'RIKAI', src: Company4LogoRIKAI },
   { name: 'Madison Technologies', src: Company9MadisonTechnologies },
-  { name: 'MOZIASOFT', src: Company10MOZIASOFT },
-  { name: 'Techchain', src: Company11Techchain },
-  { name: 'Avoca', src: Company12Avoca },
-];
-
-const NETWORK_2: Logo[] = [
+  { name: 'Edtronaut', src: Company21Edtronaut },
+  { name: 'AIAI VN', src: Company22Aiaivn },
+  { name: 'Paracel', src: Company8Paracel },
   { name: 'Enable Startup', src: Company13EnableStartup },
   { name: 'PSCD', src: Company14LOGOPSCd },
   { name: 'EM&AI', src: Company15EMAI },
-  { name: 'MRP', src: Company16Mrp },
-  { name: 'Heatmob', src: Company17Heatmob },
+  { name: 'ANTIE', src: Company23Antie },
   { name: 'EvvoLabs', src: Company18EvvoLabs },
   { name: 'AMIT', src: Company19Amit },
+  { name: 'Code Complete', src: Company25Codecomplete },
   { name: 'SPEREAX', src: Company20Spereax },
-  { name: 'Edtronaut', src: Company21Edtronaut },
-  { name: 'AIAI VN', src: Company22Aiaivn },
-  { name: 'ANTIE', src: Company23Antie },
-  { name: 'Chatfly', src: Company24Chatfly },
 ];
+
+// const NETWORK_2: Logo[] = [
+//   { name: 'MRP', src: Company16Mrp },
+//   { name: 'Heatmob', src: Company17Heatmob },
+//   { name: 'Chatfly', src: Company24Chatfly },
+// ];
 
 const TitleBlock = ({
   title,
@@ -144,14 +131,14 @@ const SchoolPartnerSection: React.FC = () => {
         </div>
 
         {/* Block 3 */}
-        <div className='mt-24'>
+        {/* <div className='mt-24'>
           <TitleBlock
             title='Đối tác thực tập'
             subtitle='Dev Plus kết nối với nhiều đối tác doanh nghiệp uy tín để đảm bảo cơ hội thực tập và đầu ra việc làm cho sinh viên.'
           />
           <SectionLabel text='Mạng lưới doanh nghiệp' />
           <Card4Grid items={NETWORK_2} />
-        </div>
+        </div> */}
       </div>
     </section>
   );
