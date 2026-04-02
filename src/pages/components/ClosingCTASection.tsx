@@ -11,7 +11,7 @@ type Props = {
 };
 
 const ClosingCTASection: React.FC<Props> = ({
-  phone = "+84 905 610 229",
+  phone = "+84 905 182 013",
   email = "marketing@devplus.edu.vn",
   website = "devplus.edu.vn",
 }) => {
