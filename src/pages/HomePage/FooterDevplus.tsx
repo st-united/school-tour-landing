@@ -31,7 +31,7 @@ const FooterDevplus = () => {
               <FaPhone />
             </div>
             <div className="text-black md:text-lg text-base">
-              +84 905 610 229
+              +84 905 182 013
             </div>
           </div>
           <div className="flex flex-row gap-2 items-center">
