@@ -11,6 +11,7 @@ const navs = [
   { id: 'schooltour', label: 'School Tour' },
   { id: 'events', label: 'Sự kiện' },
   { id: 'schoolpartner', label: 'Đối tác trường học' },
+  { id: 'globalintership', label: 'Global Internship' },
 ];
 
 const HeaderDevplus = ({ activeSection }: { activeSection: string }) => {
@@ -23,6 +24,15 @@ const HeaderDevplus = ({ activeSection }: { activeSection: string }) => {
             activeSection === nav.id ? 'p-2 bg-orange-500 text-white' : ''
           }`}
           onClick={() => {
+            if (nav.id === 'globalintership') {
+              window.open(
+                'https://global-internship.devplus.edu.vn',
+                '_blank',
+                'noopener,noreferrer',
+              );
+              return;
+            }
+
             const el = document.getElementById(nav.id);
             if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }}
